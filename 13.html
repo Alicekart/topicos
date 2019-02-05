@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+      <style>
+        body{
+          background-color: #F6CECE;
+        }
+        header{
+          background-color: #81F7F3;
+          text-align: center;
+        }
+        h1{
+          text-align: center;
+        }
+        h2{
+          text-align: center;
+          font-family: monospace
+        }
+        h3{
+          text-align: center;
+          font-family: monospace;
+        }
+        section{
+          float: left;
+          clear: both;
+          display: block;
+          border: 4px solid #F78181;
+          background-color:#F6CECE;
+          width: 70%;
+          padding: 10px;
+          height: 10%;
+        }
+        .nav{
+          text-align: center;
+          position: absolute;
+          right: 7px;
+          background-color:#81F7F3;
+          width: 25%;
+          align-content: center;
+          max-width: 25%;
+          border: 4px solid #F78181;
+          padding: 10px;
+          display: block;
+        }
+        article{
+          padding: 20%;
+          border: 4px solid;
+          float: left;
+          background-color: #81F7F3;
+          width: 97%;
+          height: 10%;
+          display: block;
+          padding: 10px;
+          border-color: #c061ae;"
+        }
+        p{
+          text-align: justify;
+        }
+        a{
+          text-align: center;
+        }
+        ol{
+          text-align: justify;
+        }
+        aside{
+          border: 2px solid black;
+          text-align:left;
+        }
+        form{
+          text-align: center;
+        }
+        footer{
+
+            right: 7px;
+            bottom: 7px;
+            border: 1px solid lightgrey;
+            background-color:#81F7F3;
+            clear: both;
+            left: 7px;
+            text-align: center;
+            display: block;
+            width: 98%;
+            height: 10%;
+            text-align: center;
+
+        }
+        </style>
+
+        <body>
+          <main>
+
+            <header id="encabezado" >
+              <br>
+              <h1>AE 1.3 – Etiquetas en HTML5</h1>
+              <h2>Alicia Karina Flores Holguín 15410584</h2>
+              <a href="https://www.youtube.com"> Enlace directo a la pagina</a>
+              <br>
+            </header>
+
+              <h1>Resúmen de nuevos elementos en HTML5</h1>
+            <section>
+              <nav class="nav">
+                <h2>Índice</h2>
+                  <a href="#article"> &lt;article&gt; </a><br>
+                  <a href="#aside"> &lt;aside&gt; </a><br>
+                  <a href="#audio"> &lt;audio&gt; </a><br>
+                  <a href="#bdi"> &lt;bdi&gt; </a><br>
+                  <a href="#canvas">&lt;canvas&gt; </a><br>
+                  <a href="#datalist"> &lt;datalist&gt; </a><br>
+                  <a href="#details"> &lt;details&gt; </a><br>
+                  <a href="#dialog"> &lt;dialog&gt; </a><br>
+                  <a href="#embed"> &lt;embed&gt; </a><br>
+                  <a href="#figcaption"> &lt;figcaption&gt; </a><br>
+                  <a href="#figure"> &lt;figure&gt; </a><br>
+                  <a href="#footer"> &lt;footer&gt; </a><br>
+                  <a href="#header"> &lt;header&gt; </a><br>
+                  <a href="#main"> &lt;main&gt; </a><br>
+                  <a href="#mark"> &lt;mark&gt; </a><br>
+                  <a href="#meter">&lt;meter&gt; </a><br>
+                  <a href="#nav"> &lt;nav&gt; </a><br>
+                  <a href="#output"> &lt;output&gt; </a><br>
+                  <a href="#picture"> &lt;picture&gt; </a><br>
+                  <a href="#progress"> &lt;progress&gt; </a><br>
+                  <a href="#rp"> &lt;rp&gt; </a><br>
+                  <a href="#rt"> &lt;rt&gt; </a><br>
+                  <a href="#ruby"> &lt;ruby&gt; </a><br>
+                  <a href="#section"> &lt;section&gt; </a><br>
+                  <a href="#source"> &lt;source&gt; </a><br>
+                  <a href="#summary"> &lt;summary&gt; </a><br>
+                  <a href="#template"> &lt;template&gt; </a><br>
+                  <a href="#time">&lt;time&gt;</a><br>
+                  <a href="#track"> &lt;track&gt; </a><br>
+                  <a href="#video"> &lt;video&gt; </a><br>
+                  <a href="#wbr"> &lt;wbr&gt; </a><br>
+
+                </nav>
+
+                <article id="article" >
+                  <h2> &lt;article&gt;</h2>
+                  <p>Se utiliza para especificar contenido independiente y autocontenido. Este debe tener sentido por sí mismo y debe ser posible distribuirlo independientemente del resto del sitio. </p>
+                  <p>Es soportado por los siguientes navegadores: </p>
+                  <ul>
+                    <li>Google Chrome 6.0</li>
+                    <li>Edge 9.0</li>
+                    <li>Firefox 4.0</li>
+                    <li>Safari 5.0</li>
+                    <li>Opera 11.1.</li>
+                  </ul>
+                  <p>Admite los atributos generales de HTML, los cuales son:</p>
+                  <ul>
+                    <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                    <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                    <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                    <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                    <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                    <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                    <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                  </ul>
+                  <p>Admite los atributos de evento:</p>
+                  <ul>
+                    <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                    <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                    <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                    <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                    <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                    <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                    <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                    <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                    <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                    <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                    <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                    <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                    <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                  </ul>
+                  <br>
+                  <p><b>Ejemplo de código:</b> </p>
+                    <xmp>
+        <article>
+        <h1> Unicornio </h1>
+        <p> Es una criatura mitológica.</p>
+        </article>
+                      </xmp>
+                      <h3>Visualización del ejemplo:</h3>
+                      <aside>
+                          <h2>Epcot Center</h2>
+                          <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+                      </aside>
+                      <br>
+                      <a href="#encabezado">Volver al inicio</a>
+                </article>
+
+
+
+                <article id="aside">
+                  <h2>&lt;aside&gt;</h2>
+                  <p>Se utiliza para: definir algún contenido aparte del contenido en el que se encuentra. Debe estar relacionado con el contenido que lo rodea. Este se podría colocar como una barra lateral en un articulo</p>
+                  <p>Es soportado por los siguientes navegadores: </p>
+                  <ul>
+                    <li>Google Chrome 6.0</li>
+                    <li>Edge 9.0</li>
+                    <li>Firefox 4.0</li>
+                    <li>Safari 5.0</li>
+                    <li>Opera 11.1.</li>
+                  </ul>
+                  <p>Admite los atributos generales de HTML, los cuales son:</p>
+                  <ul>
+                    <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                    <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                    <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                    <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                    <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                    <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                    <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                  </ul>
+                  <p>Admite los atributos de evento:</p>
+                  <ul>
+                    <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                    <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                    <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                    <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                    <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                    <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                    <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                    <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                    <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                    <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                    <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                    <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                    <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                  </ul>
+                  <br>
+                  <p><b>Ejemplo de código:</b> </p>
+                    <xmp>
+<aside>
+<h4> Centro Epcot </h4>
+<p> El Epcot Center es un parque temático en Disney World, Florida.  </p>
+</aside>
+                    </xmp>
+                    <h3>Visualización del ejemplo:</h3>
+                    <aside>
+                      <h2> Centro Epcot </h2>
+                      <p> El Epcot Center es un parque temático en Disney World, Florida.  </p>
+                    </aside>
+                    <br>
+                    <br>
+                    <a href="#encabezado">Volver al inicio</a>
+                </article>
+
+
+                <article id="audio">
+                  <h2> &lt;audio&gt;</h2>
+                  <p>Define el sonido, tales como la música u otras transmisiones de audio, existiendo así 3 formatos de archivo admitidos para audio: MP3 WAV y OGG.</p>
+                  <p><b>El formato MP3 es soportado por: </b> </p>
+                  <ul>
+                    <li>Google Chrome</li>
+                    <li>Edge</li>
+                    <li>Firefox</li>
+                    <li>Safari</li>
+                    <li>Opera</li>
+                  </ul>
+                  <p><b>El formato WAV es soportado por: </b> </p>
+                    <ul>
+                      <li>Google Chrome</li>
+                      <li>Firefox</li>
+                      <li>Safari</li>
+                      <li>Opera</li>
+                    </ul>
+                  <p><b>El formato OGG es soportado por: </b> </p>
+                    <ul>
+                      <li>Google Chrome</li>
+                      <li>Firefox</li>
+                      <li>Opera</li>
+                    </ul>
+                <p>La etiqueta audio es soportada por los siguientes navegadores: </p>
+                <ul>
+                  <li>Google Chrome 4.0</li>
+                  <li>Edge 9.0</li>
+                  <li>Firefox 3.5</li>
+                  <li>Safari 4.0</li>
+                  <li>Opera 10.5</li>
+                </ul>
+                <p>Atributos especiales:</p>
+                <ul>
+                  <li><b>autoplay (autoplay):  </b>especifica que el audio debe empezar a reproducirse tan pronto como esté listo.</li>
+                  <li><b>controls (controls): </b>especifica que los controles del audio deben mostrarse (botón de play, pause, etc.).</li>
+                  <li><b>loop (loop): </b>especifica que el audio debe iniciar otra vez, cada vez que finalice.</li>
+                  <li><b>muted (muted): </b>especifica que la salida de audio debe ser silenciada.</li>
+                  <li><b>preload (auto, metadata, none): </b>especifica como el autor piensa que el audio debe ser cargado cuando la página es cargada.</li>
+                  <li><b>src (url): </b>especifica la url del archivo de audio.</li>
+                </ul>
+                <p>Admite los atributos generales de HTML, los cuales son:</p>
+                <ul>
+                  <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                  <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                  <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                  <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                  <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                  <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                  <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                </ul>
+                <p>Admite los tributos de evento:</p>
+                <ul>
+                  <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                  <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                  <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                  <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                  <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                  <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                  <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                  <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                  <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                  <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                  <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                  <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                  <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                </ul>
+                <p><b>Ejemplo de código:</b> </p>
+                <xmp>
+<audio controls>
+<source src="1.3\01. BLING BLING.mp3" type="audio/mp3">
+Su navegador no soporta el archivo de audio.
+</audio>
+                </xmp>
+                <h1>Visualización del ejemplo:</h1>
+                <aside>
+                  <audio controls>
+                      <source src="1.3\01. BLING BLING.mp3" type="audio/mp3">
+                      Su navegador no soporta el archivo de audio.
+                    </audio>
+                </aside>
+                <br>
+                <br>
+                <a href="#encabezado">Volver al inicio</a>
+                </article>
+
+
+                <article id="bdi">
+                  <h2> &lt;bdi&gt;</h2>
+                  <p>Aísla una parte del texto que podría tener el formato en una dirección diferente a la de otro texto que se encuentra fuera de ella, es útil para contenido generado por el usuario con una direccionalidad desconocida.</p>
+                  <p>Es soportada por los navegadores:</p>
+                  <ul>
+                    <li>Google Chrome </li>
+                    <li>Firefox </li>
+                    <li>Safari </li>
+                    <li>Opera </li>
+                  </ul>
+                  <p>Admite los atributos generales de HTML, los cuales son:</p>
+                  <ul>
+                    <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                    <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                    <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                    <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                    <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                    <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                    <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                  </ul>
+                  <p>Admite los atributos de evento:</p>
+                  <ul>
+                    <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                    <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                    <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                    <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                    <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                    <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                    <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                    <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                    <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                    <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                    <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                    <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                    <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                  </ul>
+                  <p>Ejemplo de código: </p>
+                  <xmp>
+<p> En el siguiente ejemplo, los nombres de usuario se muestran junto con la cantidad de puntos en un concurso.
+  Si el elemento bdi no es compatible con el navegador, el nombre de usuario del usuario árabe confundiría el texto
+  (el algoritmo bidireccional colocaría los dos puntos y el número "90" junto a la palabra
+  "Usuario" en lugar de junto a la palabra "puntos" "). </p>
+<ul>
+  <li>Usuario <bdi>hrefs</bdi>: 60 points</li>
+  <li>Usuario <bdi>jdoe</bdi>: 80 points</li>
+  <li>Usuario <bdi>إيان</bdi>: 90 points</li>
+</ul>
+                  </xmp>
+                  <h3>Visualización del ejemplo: </h3>
+                  <aside>
+                    <p>En el siguiente ejemplo, los nombres de usuario se muestran junto con la cantidad de puntos en un concurso. Si el elemento bdi no es compatible con el navegador, el nombre de usuario del usuario árabe confundiría el texto (el algoritmo bidireccional colocaría los dos puntos y el número "90" junto a la palabra "Usuario" en lugar de junto a la palabra "puntos" ").</p>
+                    <ul>
+                      <li>Usuario <bdi>hrefs</bdi>: 60 points</li>
+                      <li>Usuario <bdi>jdoe</bdi>: 80 points</li>
+                      <li>Usuario <bdi>إيان</bdi>: 90 points</li>
+                    </ul>
+                  </aside>
+                  <br><br>
+                <a href="#encabezado">Volver al inicio</a>
+
+                </article>
+
+
+                <article id="canvas">
+                  <h2> &lt;canvas&gt;</h2>
+                  <p>Se utiliza para dibujar gráficos sobre la marcha, a través de secuencias de comandos (generalmente JavaScript).</p>
+                  <p>La etiqueta &lt;canvas&gt; es solo un contenedor para gráficos, se debe usar un script para dibujar los gráficos.</p>
+                  <p>Es soportada por los siguientes navegadores: </p>
+                    <ul>
+                      <li>Google Chrome 4.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 2.0</li>
+                      <li>Safari 3.0</li>
+                      <li>Opera 9.0</li>
+                    </ul>
+                    <p>Atributos especiales:</p>
+                    <ul>
+                      <li><b>height (pixels):</b> Especifica la altura del lienzo.</li>
+                      <li><b>width (pixels): </b>Especifica el ancho del lienzo.</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+
+                    <ul>
+                      <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                      <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                      <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                      <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                      <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                      <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                      <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                    </ul>
+                    <p>Admite los atributos de evento:</p>
+                    <ul>
+                      <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                      <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                      <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                      <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                      <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                      <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                      <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                      <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                      <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                      <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                      <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                      <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                      <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                    </ul>
+                    <p> <b>Ejemplo de código:</b> </p>
+                    <xmp>
+<canvas id="myCanvas"> Su navegador no soporta la etiqueta canvas HTML5. </canvas>
+ <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 80, 100);
+  </script>
+
+                    </xmp>
+                    <h3>Visualización del ejemplo: </h3>
+                    <aside>
+                      <br>
+                      <canvas id="myCanvas"> Su navegador no soporta la etiqueta canvas HTML5. </canvas>
+                          <script>
+                            var c = document.getElementById("myCanvas");
+                            var ctx = c.getContext("2d");
+                            ctx.fillStyle = "#FF0000";
+                            ctx.fillRect(0, 0, 80, 100);
+                          </script>
+                    </aside>
+                    <br><br>
+                    <a href="#encabezado">Volver al inicio</a>
+
+
+
+                </article>
+                <article id="data">
+                  <h2> &lt;data&gt;</h2>
+                  <p>La etiqueta vincula el contenido dado con una traducción legible por la máquina. Este elemento proporciona tanto un valor legible por máquina para procesadores de datos como un valor legible por humanos para renderizar en un navegador.</p>
+                  <p>Es soportada por: </p>
+                  <ul>
+                    <li>Google Chrome 62.0</li>
+                    <li>Edge</li>
+                    <li>Firefox 22.0</li>
+                    <li>Opera 49.0</li>
+                  </ul>
+                  <p>Atributo especial:</p>
+                  <ul>
+                    <li><b>value (machineredable, fromat):</b> Especifica la traducción legible por la maquina del contenido del elemento</li>
+                  </ul>
+                  <p>Admite los atributos generales de HTML, los cuales son:</p>
+                  <ul>
+                    <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                    <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                    <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                    <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                    <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                    <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                    <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                  </ul>
+                  <p><b>Ejemplo de código:</b></p>
+                  <xmp>
+<p> El siguiente ejemplo muestra los nombres de los productos, pero también asocia cada nombre con un número de producto:p>
+  <ul>
+    <li><data value="21053"> Tomate Cherry</data></li>
+    <li><data value="21054"> Tomate de carne</data></li>
+    <li><data value="21055"> Aperitivo de tomate </data></li>
+  </ul>
+                  </xmp>
+                  <h3>Visualización del ejemplo: </h3>
+                  <aside>
+                  <p> El siguiente ejemplo muestra los nombres de los productos, pero también asocia cada nombre con un número de producto:p>
+                    <ul>
+                      <li><data value="21053"> Tomate Cherry</data></li>
+                      <li><data value="21054"> Tomate de carne</data></li>
+                      <li><data value="21055"> Aperitivo de tomate </data></li>
+                    </ul>
+                  </aside>
+                  <br><br>
+                  <a href="#encabezado">Volver al inicio</a>
+                </article>
+
+                <article id="datalist">
+                  <h2> &lt;datalist&gt;</h2>
+                  <p>Especifica una lista de opciones predefinidas para un elemento &lt;input&gt;.</p>
+                  <p>La etiqueta &lt;datalist&gt; se usa para proporcionar una función "autocompletar" en los elementos &lt;input&gt;. Los usuarios verán una lista desplegable de opciones predefinidas a medida que ingresan datos.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 20.0</li>
+                      <li>Edge 10.0</li>
+                      <li>Firefox 4.0</li>
+                      <li>Opera 9.0</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código: </b> </p>
+                      <xmp>
+<form action="demo_form.asp" method="get">
+  <input list="browsers" name="browser">
+      <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+      </datalist>
+</form>
+                      </xmp>
+                      <h3>Visualización del ejemplo: </h3>
+                      <aside>
+                        <br><br>
+                        <form action="demo_form.asp">
+                          <input list="browsers" name="browser">
+                              <datalist id="browsers">
+                                  <option value="Internet Explorer">
+                                  <option value="Firefox">
+                                  <option value="Chrome">
+                                  <option value="Opera">
+                                  <option value="Safari">
+                              </datalist>
+                        </form>
+                        <br><br>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="details">
+                  <h2> &lt;details&gt;</h2>
+                  <p>Especifica detalles adicionales que el usuario puede ver u ocultar a petición se puede usar para crear un widget interactivo que el usuario puede abrir y cerrar. Cualquier tipo de contenido se puede poner dentro de la etiqueta  &lt;datails&gt;.</p>
+                  <p>El contenido de esta etiqueta no debería estar visible a menos que se establezca el atributo abierto.</p>}
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 12.0</li>
+                      <li>Firefox 49.0</li>
+                      <li>Safari 6.0</li>
+                      <li>Opera 15.0</li>
+                    </ul>
+                  <p>Atributo especial:</p>
+                  <ul>
+                    <li><b>open (open): </b>Especifica que los detalles pueden ser visibles para el usuario.</li>
+                  </ul>
+                  <p>Admite los atributos generales de HTML, los cuales son:</p>
+
+                    <ul>
+                      <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                      <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                      <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                      <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                      <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                      <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                      <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                    </ul>
+                  <p>Admite los atributos de evento HTML:</p>
+                    <ul>
+                      <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                      <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                      <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                      <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                      <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                      <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                      <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                      <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                      <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                      <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                      <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                      <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                      <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                    </ul>
+                  <p><b>Ejemplo de código:</b> </p>
+                  <xmp>
+<details>
+  <summary>Copyright 1999-2018. </summary>
+    <p> por los datos de Refsnes. Todos los derechos reservados. </p>
+    <p> Todo el contenido y los gráficos de este sitio web son propiedad de la empresa Refsnes Data. </p>
+</details>
+                  </xmp>
+                  <h3>Visualización del ejemplo: </h3>
+                  <aside>
+                    <details>
+                      <summary>Copyright 1999-2018. </summary>
+                      <p> por los datos de Refsnes. Todos los derechos reservados. </p>
+                      <p> Todo el contenido y los gráficos de este sitio web son propiedad de la empresa Refsnes Data. </p>
+                    </details>
+                  </aside>
+                  <br><br>
+                  <a href="#encabezado">Volver al inicio</a>
+                </article>
+
+                <article id="dialog">
+                  <h2> &lt;dialog&gt;</h2>
+                  <p>Define un cuadro de diálogo o ventana, facilitando así, la creación de diálogos y modos emergentes en una página web.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 37.0</li>
+                      <li>Firefox 59.0</li>
+                      <li>Safari 6.0</li>
+                      <li>Opera 24.0</li>
+                    </ul>
+                    <p>Atributo especial:</p>
+                    <ul>
+                      <li><b>open (open):</b> Especifica cuando el elemento dialog es activo y que el usuario puede interactuar con el.</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b></p>
+                      <xmp>
+<table>
+  <tr>
+    <th>Enero <dialog open> Esta es una ventana de dialogo       abierto </dialog></th>
+    <th>Febrero</th>
+    <th>Marzo</th>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>28</td>
+    <td>31</td>
+  </tr>
+</table>
+                      </xmp>
+                      <h3>Visualización del ejemplo:</h3>
+                      <aside>
+                        <table>
+                          <tr>
+                            <th>Enero <dialog open> Esta es una ventana de dialogo       abierto </dialog></th>
+                            <th>Febrero</th>
+                            <th>Marzo</th>
+                          </tr>
+                          <tr>
+                            <td>31</td>
+                            <td>28</td>
+                            <td>31</td>
+                          </tr>
+                        </table>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                </article>
+
+                <article id="embed">
+                  <h2> &lt;embed&gt;</h2>
+                  <p>Define un contenedor para una aplicación externa o contenido interactivo (un complemento).</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome</li>
+                      <li>Edge</li>
+                      <li>Firefox</li>
+                      <li>Safari </li>
+                      <li>Opera</li>
+                    </ul>
+                    <p>Atributos especiales: </p>
+                    <ul>
+                      <li><b>height (pixels): </b>Especifica el alto del contenido incrustado. </li>
+                      <li><b>src (URL): </b>especifica la dirección de un elemento externo para incluir.</li>
+                      <li><b>type (media_type): </b>Especifica el tipo de medio del contenido. </li>
+                      <li><b>widht (pixels): </b>Especifica el ancho del contenido</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo del código:</b> </p>
+                      <xmp>
+<embed src="1.3\johnny.gif">
+                      </xmp>
+                      <h3>Visualiación del ejemplo:</h3>
+                      <aside >
+                        <br>
+                        <embed src="1.3\johnny.gif">
+                        <br>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                </article>
+
+                <article id="figcaption">
+                  <h2> &lt;figcaption&gt;</h2>
+                  <p>Define un título para un elemento tipo &lt;figure&gt;, este es colocado como primer o ultimo elemento secundario del elemento &lt;figure&gt;</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome</li>
+                      <li>Edge</li>
+                      <li>Firefox</li>
+                      <li>Safari </li>
+                      <li>Opera</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<figure>
+  <img src="1.3\johnny.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Johnny Ceo.
+  </figcaption>
+                      </xmp>
+                      <h3>Visualiación del ejemplo</h3>
+                      <aside>
+                        <figure>
+                          <img src="1.3\johnny.jpg" alt="Trulli" style="width:100%">
+                          <figcaption>Fig.1 - Johnny ceo.
+                          </figcaption>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                </article>
+
+                <article id="figure">
+                  <h2> &lt;figure&gt;</h2>
+                  <p>Especifica contenido autocontenido, como ilustraciones, diagramas, fotos, listas de códigos, etc. A pesar de estar relacionado con el flujo principal, la posición es independiente del flujo principal, por lo que si falta no afecta el flujo del documento.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 6.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 4.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<figure>
+  <img src="1.3\j.jpg" alt="johnny bb" width="304" height="228">
+</figure>
+                      </xmp>
+                      <h3>Visualiación del ejemplo.</h3>
+                      <aside>
+                        <figure>
+                          <img src="1.3\j.jpg" alt="johnny bb" width="304" height="228">
+                        </figure>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+
+                <article id="footer">
+                  <h2> &lt;footer&gt;</h2>
+                  <p>Define un pie de página para un documento o sección, este debe contener información sobre el elemento que lo contiene.</p>
+                  <p>Típicamente contiene:</p>
+                  <ul>
+                    <li>Información de autoría</li>
+                    <li>Información registrada</li>
+                    <li>Información del contacto</li>
+                    <li>Mapa del sitio</li>
+                    <li>Volver a los enlaces superiores</li>
+                    <li>Documentos relacionados</li>
+                  </ul>
+
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 6.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 4.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b></p>
+                      <xmp>
+<footer>
+<p>Posted by: Hege Refsnes</p>
+<p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a></p>
+</footer>
+                      </xmp>
+                      <h3>Visualiación del ejemplo</h3>
+                      <aside>
+                        <br>
+                        <footer>
+                          <p>Posted by: Hege Refsnes</p>
+                          <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a></p>
+                        </footer>
+                        <br>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                </article>
+
+
+                <article id="header">
+                  <h2> &lt;header&gt;</h2>
+                  <p>Representa un contenedor para contenido introductorio o un conjunto de enlaces de navegación. Típicamente contiene:</p>
+                  <ul>
+                    <li>Uno o más elementos de encabezado (&lt;h1&gt; - &lt;h6&gt;)</li>
+                    <li>Logo o icono</li>
+                    <li>Información de autoría</li>
+                  </ul>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 6.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 4.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b></p>
+                      <xmp>
+<article>
+  <header>
+    <h1> El encabezado más importante aquí. </h1>
+    <h3> El encabezado menos importante aquí </h3>
+        <p> Alguna información adicional aquí. <p>
+  </header>
+        <p> Texto de la página</p>
+</article>
+                      </xmp>
+                      <h3> Visualiación del ejemplo</h3>
+                      <aside>
+                        <article>
+                          <header>
+                            <h1> El encabezado más importante aquí. </h1>
+                            <h3> El encabezado menos importante aquí </h3>
+                            <p> Alguna información adicional aquí. <p>
+                          </header>
+                          <p> Texto de la página</p>
+                        </article>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                </article>
+
+                <article id="main">
+                  <h2> &lt;main&gt;</h2>
+                  <p>Especifica el contenido principal de un documento, el contenido que va en esta etiqueta debe ser único para el documento, no debe contener información que se repita en documentos como barras laterales, enlaces de navegación, información de derechos de autor, logotipos del sitio y formularios de búsqueda. No debe haber más de un elemento <main></p>
+                    <p>Es soportada por: </p>
+                      <ul>
+                        <li>Google Chrome 6.0</li>
+                        <li>Edge 12.0</li>
+                        <li>Firefox 4.0</li>
+                        <li>Safari 5.0</li>
+                        <li>Opera 11.1</li>
+                      </ul>
+                      <p>Admite los atributos generales de HTML, los cuales son:</p>
+                        <ul>
+                          <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                          <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                          <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                          <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                          <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                          <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                          <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                        </ul>
+                      <p>Admite los atributos de evento HTML:</p>
+                        <ul>
+                          <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                          <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                          <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                          <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                          <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                          <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                          <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                          <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                          <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                          <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                          <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                          <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                          <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                        </ul>
+                        <p><b>Ejemplo de código</b> </p>
+                        <xmp>
+<main>
+  <h1>Navegadores Web </h1>
+    <p>Google Chrome, Firefox, and Internet Explorer son los navegadores más utilizados en la actualidad. </p>
+    <article>
+      <h1>Google Chrome</h1>
+      <p>Google Chrome es un navegador web gratuito de código abierto desarrollado por Google, lanzado en 2008. </p>
+    </article>
+    <article>
+      <h1>Internet Explorer</h1>
+      <p>Internet Explorer es un navegador web gratuito de Microsoft, lanzado en 1995. </p>
+    </article>
+    <article>
+      <h1>Mozilla Firefox</h1>
+      <p>Firefox es un navegador web gratuito y de código abierto de Mozilla, lanzado en 2004. </p>
+    </article>
+</main>
+                        </xmp>
+                        <h3>Visualiación del ejemplo</h3>
+                        <aside>
+                          <main>
+                            <h1>Navegadores Web </h1>
+                            <p>Google Chrome, Firefox, and Internet Explorer son los navegadores más utilizados en la actualidad. </p>
+                            <article>
+                              <h1>Google Chrome</h1>
+                              <p>Google Chrome es un navegador web gratuito de código abierto desarrollado por Google, lanzado en 2008. </p>
+                            </article>
+
+                            <article>
+                              <h1>Internet Explorer</h1>
+                              <p>Internet Explorer es un navegador web gratuito de Microsoft, lanzado en 1995. </p>
+                            </article>
+
+                            <article>
+                              <h1>Mozilla Firefox</h1>
+                              <p>Firefox es un navegador web gratuito y de código abierto de Mozilla, lanzado en 2004. </p>
+                            </article>
+                          </main>
+                        </aside>
+                        <br><br>
+                        <a href="#encabezado">Volver al inicio</a>
+                        <br><br>
+                </article>
+
+                <article id="mark">
+                  <h2> &lt;mark&gt;</h2>
+                  <p>Define el texto marcado, se utiliza si se desea resaltar del texto.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 6.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 4.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<p>No olvides hacer <mark> la tarea </mark>hoy. </p>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside class="">
+                        <p>No olvides hacer <mark> la tarea </mark>hoy. </p>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="meter">
+                  <h2> &lt;meter&gt;</h2>
+                  <p>Define una medida escalar dentro de un rango conocido, o un valor fraccionario. Esto también se conoce como un indicador. No se debe usarse para indicar el progreso (como en la barra de progreso).</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 8.0</li>
+                      <li>Edge 13.0</li>
+                      <li>Firefox 6.0</li>
+                      <li>Safari 6.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Atributos especiales:</p>
+                    <ul>
+                      <li><b>form (form_id): </b>Especifica una o más formas a que el elemento &lt;meter&gt; permanece.</li>
+                      <li><b>high (number): </b>Especifica el intervalo que se considera un alto valor.</li>
+                      <li><b>low (number):</b> Especifica el intervalo que se considera un valor bajo.</li>
+                      <li><b>max (number): </b>Especifica el valor máximo del rango.</li>
+                      <li><b>min (number): </b>Especifica el valor mínimo del rango.</li>
+                      <li><b>optimum (number): </b>Especifica que valor es el valor óptimo para el indicador.</li>
+                      <li><b>value (number): </b>requerido, especifica el valor actual del indicador.</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<p>Mostrar un indicador: </p>
+<meter value="2" min="0" max="10">2 out of 10</meter><br>
+<meter value="0.6">60%</meter>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside class="">
+                        <p>Mostrar un indicador: </p>
+                        <meter value="2" min="0" max="10">2 out of 10</meter><br>
+                        <meter value="0.6">60%</meter>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="nav">
+                  <h2> &lt;nav&gt;</h2>
+                  <p>Define un conjunto de enlaces de navegación. No todos los enlaces de un documento deben estar dentro de un elemento &lt;nav&gt;. El elemento &lt;nav&gt; está destinado solo para el bloque principal de enlaces de navegación.</p>
+                  <p>Los navegadores, como los lectores de pantalla para usuarios discapacitados, pueden usar este elemento para determinar si se omite la representación inicial de este contenido.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 6.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 4.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <nav>
+                          <a href="/html/">HTML</a> |
+                          <a href="/css/">CSS</a> |
+                          <a href="/js/">JavaScript</a> |
+                          <a href="/jquery/">jQuery</a>
+                        </nav>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+
+                </article>
+                <article id="output">
+                  <h2> &lt;output&gt;</h2>
+                  <p>Representa el resultado de un cálculo (como uno realizado por un script).</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 8.0</li>
+                      <li>Edge 13.0</li>
+                      <li>Firefox 6.0</li>
+                      <li>Safari 6.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Atributos especiales:</p>
+                    <ul>
+                      <li><b>for (element_id): </b>Especifica la relación entre el resultado del cálculo y los elementos utilizados en el cálculo.</li>
+                      <li><b>form (form_id): </b>Especifica una o más formas a que el elemento output pertenece.</li>
+                      <li><b>name (name): </b>Especifica un nombre para el elemento de salida.</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+  <input type="range" id="a" value="50">100
+  +<input type="number" id="b" value="50">
+  =<output name="x" for="a b"></output>
+</form>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                          <input type="range" id="a" value="50">100
+                          +<input type="number" id="b" value="50">
+                          =<output name="x" for="a b"></output>
+                        </form>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                </article>
+
+
+                <article id="picture">
+                  <h2> &lt;picture&gt;</h2>
+                  <p>Brinda a los desarrolladores web más flexibilidad para especificar recursos de imagen, su uso más común es para la dirección de arte en diseños sensibles. En lugar de tener una imagen escalada hacia arriba o hacia abajo según el ancho de la ventana gráfica, se pueden diseñar varias imágenes para que ocupen más espacio en la ventana gráfica del navegador.</p>
+                  <p>Este contiene 2 etiquetas diferentes &lt;source&gt; e &lt;img&gt;. </p>
+                  <p>surce tiene los siguientes atributos: </p>
+                  <ul>
+                    <li>srcset (obligatorio): este define la URL de la imagen a mostrar.</li>
+                    <li>media: acepta cualquier consulta de medios válida que normalmente se definiría en un CSS.</li>
+                    <li>sizes: define un descriptor de anchura individual, una consulta sola con el descriptor de anchura o una lista delimitada por comas de las consultas de los medios de comunicación con un descriptor de anchura.</li>
+                    <li>type: define el tipo MIME,</li>
+                  </ul>
+                  <p>Así el navegador utiliza los valores de los atributos para cargar la imagen más adecuada.</p>
+                  <p>&lt;img&gt; se requiere como la ultima etiqueta secundaria del bloque de declaración &lt;picture&gt;, se utiliza para proporcionar compatibilidad con versiones anteriores para los navegadores que no admiten el elemento &lt;picture&gt;</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 38.0</li>
+                      <li>Edge 13.0</li>
+                      <li>Firefox 38.0</li>
+                      <li>Safari 9.1</li>
+                      <li>Opera 25.0</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<picture>
+  <source media="(min-width: 650px)" srcset="1.3\oh.jpg">
+  <source media="(min-width: 200px)" srcset="1.3\jeno.jpg">
+  <img src="1.3\baekho.jpg" alt="ellos" style="width:auto;">
+</picture>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <picture>
+                          <source media="(min-width: 650px)" srcset="1.3\jeno.jpg">
+                          <source media="(min-width: 200px)" srcset="1.3\oh.jpg">
+                          <img src="1.3\baekho.jpg" alt="ellos" style="width:auto;">
+                        </picture>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="progress">
+                  <h2> &lt;progress&gt;</h2>
+                  <p>Representa el progreso de una tarea, se sugiere que se utilice junto con JavaScript para mostrar el progreso de una tarea. Cabe mencionar que no es adecuada para representar un indicador.</p>
+
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 8.0</li>
+                      <li>Edge 10.0</li>
+                      <li>Firefox 16.0</li>
+                      <li>Safari 6.0</li>
+                      <li>Opera 11.0</li>
+                    </ul>
+                    <p>Atributos especiales:</p>
+                    <ul>
+                      <li><b>max (number): </b>Especifica la cantidad de trabajo que la tarea requiere en total.</li>
+                      <li><b>value (number): </b>Especifica cuánto de la tarea se ha completado</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<p>Descargando progreso:</p>
+<progress value="22" max="100">
+</progress>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <p>Descargando progreso:</p>
+                        <progress value="22" max="100">
+                        </progress>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="rp">
+                  <h2> &lt;rp&gt;</h2>
+                  <p>Se puede utilizar para proporcionar paréntesis alrededor de un texto ruby, que se muestra en los navegadores que no admiten las anotaciones ruby.</p>
+                  <p>&lt;rp&gt;se usa junto a las etiquetas &lt;ruby&gt; y &lt;rt&gt;, el elemento &lt;ruby&gt; consta de uno o más caracteres que requieren explicación, pronunciación y un elemento &lt;rt&gt; proporciona esta información, el elemento &lt;rp&gt; opcional que define qué mostrar para los navegadores que no admiten las anotaciones de &lt;ruby&gt;.</p>
+
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 5.0</li>
+                      <li>Edge 5.5</li>
+                      <li>Firefox 38.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 10.0</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<ruby>
+漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+</ruby>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <ruby>
+                        漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+                        </ruby>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+
+                </article>
+                <article id="rt">
+                  <h2> &lt;rt&gt;</h2>
+                  <p>Define una explicación o pronunciación de los caracteres (para tipografía de Asia oriental) en una anotación de ruby.</p>
+                  <p>Se usa la etiqueta &lt;rt&gt; junto con &lt;ruby&gt; y &lt;rp&gt;, &lt;ruby&gt; consta de uno o mas caracteres que requieren explicación, pronunciación, &lt;rt&gt; proporciona esta información y &lt;rp&gt; para mostrar en los navegadores que no admiten las anotaciones de ruby.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 5.0</li>
+                      <li>Edge 5.5</li>
+                      <li>Firefox 38.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 15.0</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<ruby>
+ 漢 <rt> ㄏㄢˋ </rt>
+</ruby>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <ruby>
+                         漢 <rt> ㄏㄢˋ </rt>
+                        </ruby>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                </article>
+
+                <article id="ruby">
+                  <h2> &lt;ruby&gt;</h2>
+                  <p>Especifica una anotación ruby, el cual es un pequeño texto adicional, que se adjunta al texto principal para indicar una pronunciación o el significado de los caracteres correspondientes, utilizado mayormente en publicaciones japonesas.</p>
+                  <p>Se utiliza junto a las etiquetas &lt;rp&gt; y &lt;rt&gt;.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 5.0</li>
+                      <li>Edge 5.5</li>
+                      <li>Firefox 38.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 15.0</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<ruby>
+ 漢 <rt> ㄏㄢˋ </rt>
+</ruby>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <ruby>
+                         漢 <rt> ㄏㄢˋ </rt>
+                        </ruby>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="section">
+                  <h2> &lt;section&gt;</h2>
+                  <p>Define las secciones de un documento, como capítulos, encabezados, pies de página o cualquier otra sección del documento.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 6.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 4.0</li>
+                      <li>Safari 5.0</li>
+                      <li>Opera 11.1</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<section>
+  <h1> Primera sección</h1>
+  <p>este es el texto de la primera sección</p>
+</section>
+<section>
+  <h1>segunda sección</h1>
+  <p>este es el texto de la segunda sección. </p>
+</section>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <section>
+                          <h1> Primera sección</h1>
+                          <p>este es el texto de la primera sección</p>
+                        </section>
+
+                        <section>
+                          <h1>segunda sección</h1>
+                          <p>este es el texto de la segunda sección. </p>
+                        </section>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="source">
+                  <h2> &lt;source&gt;</h2>
+                  <p>Se usa para especificar múltiples recursos de medios para elementos de medios como &lt;video&gt;, &lt;audio&gt; y &lt;picture&gt;. Permite especificar archivos de video, audio e imagen alternativos entre los que el navegador puede elegir según sea su tipo de medio, soporte códec o consulta de medios.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 4.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 3.5</li>
+                      <li>Safari 4.0</li>
+                      <li>Opera 10.5</li>
+                    </ul>
+                    <p>Atributos especiales:</p>
+                    <ul>
+                      <li><b>src (URL): </b>Se requiere cuando &lt;source&gt; se usa en &lt;audio&gt; y &lt;video&gt;. Especifica la URL del archivo multimedia.</li>
+                      <li><b>srcset (URL): </b>Se requiere cuando &lt;source&gt; se utiliza en &lt;picture&gt;. Especifica la URL de la imagen para usar en diferentes situaciones.</li>
+                      <li><b>media (media_query): </b>Acepta cualquier consulta de medios válida que normalmente se definiría en un CSS</li>
+                      <li><b>sizes:</b>especifica tamaños de imagen para diferentes diseños de página.</li>
+                      <li><b>type (MIME-type): </b>Especifica el tipo MIME del recurso.</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<audio controls>
+  <source src="1.3\Get Cool.mp3" type="audio/mp3">
+  Su navegador no es compatible con el elemento de audio.
+</audio>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <audio controls>
+                          <source src="1.3\Get Cool.mp3" type="audio/mp3">
+                          Su navegador no es compatible con el elemento de audio.
+                        </audio>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+
+                </article>
+                <article id="summary">
+                  <h2> &lt;summary&gt;</h2>
+                  <p>Define un encabezado visible para el elemento &lt;details&gt;. Se puede hacer clic en el encabezado para ver / ocultar los detalles. </p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 12.0</li>
+                      <li>Firefox 48.0</li>
+                      <li>Safari 6.0</li>
+                      <li>Opera 15.0</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<details>
+  <summary>Hola </summary>
+  <p> - ¿qué tal? </p>
+</details>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside>
+                        <br>
+                        <details>
+                          <summary>Hola </summary>
+                          <p> - ¿qué tal? </p>
+                        </details>
+                        <br>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                    </article>
+
+                    <article id="template">
+                      <h2> &lt;template&gt;</h2>
+                      <p>Mantiene su contenido oculto al usuario, el contenido en esta etiqueta no se procesará. El contenido puede ser visible y renderizado más tarde usando JavaScript.</p>
+                      <p>Se utiliza cuando el codigo HTML se usa una y otra vez, pero no hasta que sea solicitado. Para esto, sin la etiqueta &lt;template&gt;, debe crear el codigo HTML con JavaScript para evitar que el navegador rinda el código.</p>
+                      <p>Es soportada por: </p>
+                        <ul>
+                          <li>Google Chrome 26.0</li>
+                          <li>Edge 13.0</li>
+                          <li>Firefox 22.0</li>
+                          <li>Safari 9</li>
+                          <li>Opera 15.0</li>
+                        </ul>
+                        <p>Admite los atributos generales de HTML, los cuales son:</p>
+                          <ul>
+                            <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                            <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                            <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                            <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                            <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                            <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                            <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                          </ul>
+                        <p>Admite los atributos de evento HTML:</p>
+                          <ul>
+                            <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                            <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                            <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                            <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                            <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                            <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                            <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                            <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                            <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                            <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                            <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                            <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                            <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                          </ul>
+                          <p><b>Ejemplo de código</b> </p>
+                          <xmp>
+                    <p> Haga clic en el botón para obtener el contenido de una plantilla y visualizarlo en la página web. </p>
+                    <button onclick="showContent()"> Mostrar contenido </button>
+                    <template>
+                    <h2>Flower</h2>
+                    <img src="1.3\baekho.jpg" width="214" height="204">
+                    </template>
+                    <script>
+                    function showContent() {
+                    var temp = document.getElementsByTagName("template")[0];
+                    var clon = temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                    }
+                    </script>
+                          </xmp>
+                          <h3>Visualización del ejemplo</h3>
+                          <aside>
+                            <p> Haga clic en el botón para obtener el contenido de una plantilla y visualizarlo en la página web. </p>
+
+                            <button onclick="showContent()"> Mostrar contenido </button>
+                            <template id="t">
+                              <h2>Baekho</h2>
+                              <img src="1.3\baekhor.jpg" width="214" height="204">
+                            </template>
+                            <script>
+                              function showContent() {
+                                var temp = document.getElementsByTagName("template")[0]);
+                                var clon = temp.content.cloneNode(true);
+                                document.body.appendChild(clon);
+                              }
+                            </script>
+                          </aside>
+                          <br><br>
+                          <a href="#encabezado">Volver al inicio</a>
+                          <br><br>
+                    </article>
+
+                    <article id="time">
+                      <h2> &lt;time&gt;</h2>
+                      <p>Define la fecha y hora siendo legible para el usuario.</p>
+                      <p>Ayuda igual para codificar fechas y horas de manera legible por la máquina, de modo que los usuarios puedan agregar recordatorios al calendario, los motores de búsqueda pueden producir resultados de búsqueda más inteligentes.</p>
+                      <p>Es soportada por: </p>
+                        <ul>
+                          <li>Google Chrome 6.0</li>
+                          <li>Edge 9.0</li>
+                          <li>Firefox 4.0</li>
+                          <li>Safari 5.0</li>
+                          <li>Opera 11.1</li>
+                        </ul>
+                        <p>Atributos especiales:</p>
+                        <ul>
+                          <li><b>datatime (datatime):</b>Representa una fecha / hora legible por máquina del elemento &lt;time&gt;</li>
+                        </ul>
+                        <p>Admite los atributos generales de HTML, los cuales son:</p>
+                          <ul>
+                            <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                            <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                            <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                            <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                            <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                            <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                            <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                          </ul>
+                        <p>Admite los atributos de evento HTML:</p>
+                          <ul>
+                            <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                            <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                            <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                            <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                            <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                            <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                            <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                            <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                            <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                            <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                            <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                            <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                            <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                          </ul>
+                          <p><b>Ejemplo de código</b> </p>
+                          <xmp>
+  <p>Abrimos a las <time>10:00</time> cada día. </p>
+  <p> Tengo una cita en.<time datetime="2008-02-14 20:00"> Día de San Valentín </time>. </p>
+                          </xmp>
+                          <h3>Visualización del ejemplo</h3>
+                          <aside>
+                            <p>Abrimos a las <time>10:00</time> cada día. </p>
+                            <p> Tengo una cita en.<time datetime="2008-02-14 20:00"> Día de San Valentín </time>. </p>
+                          </aside>
+                          <br><br>
+                          <a href="#encabezado">Volver al inicio</a>
+                          <br><br>
+                    </article>
+
+
+                <article id="track">
+                  <h2> &lt;track&gt;</h2>
+                  <p>Especifica pistas de texto para elementos multimedia. Este elemento se utiliza para especificar subtítulos, archivos de subtítulos u otros archivos que contienen texto, que deberían ser visibles cuando se reproducen los medios.</p>
+                  <p>Es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 18.0</li>
+                      <li>Edge 10.0</li>
+                      <li>Firefox 31.0</li>
+                      <li>Safari 6.0</li>
+                      <li>Opera 15.0</li>
+                    </ul>
+                    <p>Atributos opcionales:</p>
+                    <ul>
+                      <li><b>default (default): </b>Especifica que la pista se habilitará si las preferencias del usuario no indican que otra pista sería más apropiada.</li>
+                      <li><b>kind (captions, chapters, descriptions, metadata, subtitles): </b>Especifica el tipo de pista de texto.</li>
+                      <li><b>label (text): </b>Especifica el título de la pista de texto.</li>
+                      <li><b>src (URL): </b>Required. Specifies the URL of the track file.</li>
+                      <li><b>srclang (lenguaje_code): </b>Especifica el idioma de los datos de texto de la pista (requerido si kind = "subtitles").</li>
+                    </ul>
+                    <p>Admite los atributos generales de HTML, los cuales son:</p>
+                      <ul>
+                        <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                        <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                        <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                        <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                        <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                        <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                        <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                      </ul>
+                    <p>Admite los atributos de evento HTML:</p>
+                      <ul>
+                        <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                        <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                        <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                        <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                        <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                        <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                        <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                        <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                        <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                        <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                        <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                        <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                        <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                      </ul>
+                      <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<video width="320" height="240" controls>
+  <source src="..\ace.mp4" type="video/mp4">
+  <source src="forrest_gump.ogg" type="video/ogg">
+  <track src="subtitles_en.vtt" kind="subtitles" srclang="en"label="English">
+  <track src="subtitles_no.vtt" kind="subtitles" srclang="no"label="Norwegian">
+</video>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                      <aside class="">
+                        <video width="320" height="240" controls>
+                          <source src="forrest_gump.mp4" type="video/mp4">
+                          <source src="forrest_gump.ogg" type="video/ogg">
+                          <track src="subtitles_en.vtt" kind="subtitles" srclang="en"label="English">
+                          <track src="subtitles_no.vtt" kind="subtitles" srclang="no"label="Norwegian">
+                        </video>
+                      </aside>
+                      <br><br>
+                      <a href="#encabezado">Volver al inicio</a>
+                      <br><br>
+                    </article>
+
+                <article id="video">
+                  <h2> &lt;video&gt;</h2>
+                  <p>Especifica el video, como un clip de película u otras secuencias de video. Habiendo 3 tipos de formatos de video compatibles para la etiqueta &lt;video&gt;, MP4, WebM y Ogg:</p>
+                  <p>Mp4 es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome</li>
+                      <li>Edge</li>
+                      <li>Firefox 21, 30 y Linux</li>
+                      <li>Safari</li>
+                      <li>Opera</li>
+                    </ul>
+                    <p>WebM es soportada por: </p>
+                      <ul>
+                        <li>Google Chrome</li>
+                        <li>Firefox</li>
+                        <li>Opera</li>
+                      </ul>
+                      <p>Ogg es soportada por: </p>
+                        <ul>
+                          <li>Google Chrome</li>
+                          <li>Firefox</li>
+                          <li>Opera</li>
+                        </ul>
+                  <p>La etiqueta video es soportada por: </p>
+                    <ul>
+                      <li>Google Chrome 4.0</li>
+                      <li>Edge 9.0</li>
+                      <li>Firefox 3.5</li>
+                      <li>Safari 4.0</li>
+                      <li>Opera 10.5</li>
+                    </ul>
+
+                  <p>Atributos especiales:</p>
+                  <ul>
+                    <li><b>autoplay (autoplay): </b>Especifica que el video comenzará a reproducirse tan pronto como esté listo.</li>
+                    <li><b>controls (controls): </b>Especifica que se deben mostrar los controles de video (como un botón de reproducción / pausa, etc.).</li>
+                    <li><b>loop (loop): </b>Especifica que el video volverá a comenzar, cada vez que se termine.</li>
+                    <li><b>muted (muted): </b>Especifica que la salida de audio del video debe ser silenciada.</li>
+                    <li><b>poster (URL): </b>Especifica una imagen que se mostrará mientras se descarga el video, o hasta que el usuario presione el botón de reproducción.</li>
+                    <li><b>preload (auto, metadata, none): </b>Especifica si y cómo el autor piensa que el video debe cargarse cuando se carga la página.</li>
+                    <li><b>src (URL): </b>especifica la URL del archivo de video.</li>
+                    <li><b>width (pixels): </b>Establece el ancho del reproductor de video.</li>
+                  </ul>
+                  <p>Admite los atributos generales de HTML, los cuales son:</p>
+                    <ul>
+                      <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                      <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                      <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                      <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                      <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                      <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                      <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                    </ul>
+                 <p>Admite los atributos de evento HTML:</p>
+                    <ul>
+                      <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                      <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                      <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                      <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                      <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                      <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                      <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                      <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                      <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                      <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                      <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                      <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                      <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                    </ul>
+                  <p><b>Ejemplo de código</b> </p>
+                      <xmp>
+<video width="320" height="240" controls>
+  <source src="1.3\ace.mp4" type="video/mp4">
+   Su buscador no soporta la etiqueta de video
+</video>
+                      </xmp>
+                      <h3>Visualización del ejemplo</h3>
+                        <aside>
+                          <video width="320" height="240" controls>
+                            <source src="1.3\ace.mp4" type="video/mp4">
+                            Su buscador no soporta la etiqueta de video
+                          </video>
+                        </aside>
+                        <br><br>
+                        <a href="#encabezado">Volver al inicio</a>
+                        <br><br>
+                      </article>
+
+                            <article id="wbr">
+                              <h2> &lt;wbr&gt;</h2>
+                              <p>Especifica donde en un texto se debe añadir un salto de línea. Cuando alguna palabra es demasiado larga, o tiene miedo de que el navegador rompa sus líneas en el lugar equivocado, se puede utilizar el elemento &lt;wbr&gt; para agregar oportunidades de separación de palabras.</p>
+                              <p>Es soportada por: </p>
+                                <ul>
+                                  <li>Google Chrome 1.0</li>
+                                  <li>Edge 12.0</li>
+                                  <li>Firefox 3.0</li>
+                                  <li>Safari 4.0</li>
+                                  <li>Opera 11.7</li>
+                                </ul>
+                                <p>Admite los atributos generales de HTML, los cuales son:</p>
+                                  <ul>
+                                    <li><b>contenteditable: </b> especifica si el contenido de un elemento es editable o no.</li>
+                                    <li><b>data-*:</b> usado para almacenar datos privados en la página o aplicación.</li>
+                                    <li><b>draggable: </b>especifica si el elemento es arrastrable o no.</li>
+                                    <li><b>dropzone:</b> especifica si los datos arrastrados se copian, mueven o vinculan cuando se sueltan.</li>
+                                    <li><b>hidden:</b> especifica que un elemento es, o si no es pertinente, relevante.</li>
+                                    <li><b>spellcheck:</b> especifica si el elemento debe tener su ortografía y gramática revisadas o no.</li>
+                                    <li><b>translate:</b> especifica si el contenido de un elemento debe ser traducido o no.</li>
+                                  </ul>
+                                <p>Admite los atributos de evento HTML:</p>
+                                  <ul>
+                                    <li><b>onafterprint: </b>secuencia de comandos a ejecutar después de que se imprime el documento.</li>
+                                    <li><b>onbeforeprint: </b>secuencia de comandos a ejecutar antes de que se imprima el documento.</li>
+                                    <li><b>onbeforeunload: </b>secuencia de comandos a ejecutar cuando el documento está a punto de descargarse.</li>
+                                    <li><b>onerror: </b>secuencia de comandos a ejecutar cuando un error ocurre.</li>
+                                    <li><b>onhashchange: </b>secuencia de comandos a ejecutar cuando ha habido cambios a la parte de anclaje de la URL.</li>
+                                    <li><b>onmessage: </b>secuencia de comandos a ejecutarse cuando un mensaje es activado.</li>
+                                    <li><b>onoffline: </b>secuencia de comandos a ejecutarse cuando el buscador comienza a trabajar fuera de línea.</li>
+                                    <li><b>ononline: </b>secuencia de comandos a ejecutar cuando el buscador comienza a trabajar en línea.</li>
+                                    <li><b>onpagehide: </b>secuencia de comandos a ejecutar cuando un usuario navega fuera de una pagina.</li>
+                                    <li><b>onpageshow: </b>secuencia de comandos a ejecutar cuando un usuario navega a una página.</li>
+                                    <li><b>onpopstate: </b>secuencia de comandos a ejecutar cuando el historial de la ventana cambia.</li>
+                                    <li><b>onresize: </b>Se desencadena cuando cambia el tamaño de la ventana del navegador.</li>
+                                    <li><b>onstorage: </b>secuencia de comandos a ejecutar cuando se actualiza un área de almacenamiento web.</li>
+                                  </ul>
+                                  <p><b>Ejemplo de código</b> </p>
+                                  <xmp>
+<p> Intente reducir el tamaño de la ventana del navegador
+  para ver cómo se romperá la palabra muy larga en el párrafo siguiente: </p>
+<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryvery
+    <wbr>longwordthatwillbreakatspecific
+    <wbr>placeswhenthebrowserwindowisresized. </p>
+                                  </xmp>
+                                  <h3>Visualización del ejemplo</h3>
+                                  <aside>
+                                    <p> Intente reducir el tamaño de la ventana del navegador para ver cómo se romperá la palabra muy larga en el párrafo siguiente: </p>
+                                    <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery
+                                        <wbr>longwordthatwillbreakatspecific
+                                        <wbr>placeswhenthebrowserwindowisresized. </p>
+                                  </aside>
+                                  <br><br>
+                                  <a href="#encabezado">Volver al inicio</a>
+                                  <br><br>
+                                </article>
+      </section>
+      <footer>
+          <h3>Instituto Tecnologico de Parral, Ingenieria en Sistemas Computacionales</h3>
+      </footer>
+    </main>
+  </body>
+</html>
